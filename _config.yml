@@ -33,14 +33,12 @@ projects:
 topics:
   - name: Python
     web_url: https://github.com/topics/python
-    image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/python/python.png
+    image_url: https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/Python_logo-512.png
     
   - name: Machine Learning
     web_url: https://github.com/topics/machine-learning
     image_url: https://cdn0.iconfinder.com/data/icons/trending-tech/94/artificial_intelligence-512.png
    
   - name: Computer Hardware
+    web_url: https://hackaday.io/cpbucher5
     image_url: https://static.thenounproject.com/png/87577-200.png
-  
-  - name: Vinyl Records
-    image_url: https://cdn4.iconfinder.com/data/icons/glyph-set-one/32/glyph-set-one-33-512.png
