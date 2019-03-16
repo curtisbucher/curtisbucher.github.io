@@ -27,11 +27,8 @@ projects:
     projects:
     # - repo-name
 
-social_media:
+#social_media:
   # twitter: your_username
-  instagram: curtisbucher
-  github: curtisbucher
-  hackaday: curtisbucer
 
 topics:
   #- name: CSS
