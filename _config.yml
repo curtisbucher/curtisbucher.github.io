@@ -28,7 +28,7 @@ projects:
     # - repo-name
 
 # social_media:
-  # behance: your_username
+  # behance: your_uswername
   # dribbble: your_username
   # facebook: your_username
   # linkedin: your_username
@@ -38,6 +38,9 @@ projects:
   # twitter: your_username
   # youtube: your_username
   # vk: your_username
+  instagram: curtisbucher
+  github: curtisbucher
+  hackaday: curtisbucer
 
 topics:
   - name: CSS
