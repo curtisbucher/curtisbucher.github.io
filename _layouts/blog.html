@@ -1,7 +1,3 @@
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous"
-  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
-
 <h2>Archive</h2>
 {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %b'"  %}
 {% for yearMonth in postsByYearMonth %}
@@ -12,5 +8,3 @@
   {% endfor %}
 </ul>
 {% endfor %}
-
-<div class="fb-comments" data-href="http://127.0.0.1:4000/blog" data-width="" data-numposts="5"></div>
