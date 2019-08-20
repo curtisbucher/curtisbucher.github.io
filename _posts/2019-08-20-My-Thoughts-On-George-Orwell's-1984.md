@@ -1,3 +1,6 @@
+*This piece appears unedited from a free choice writing essay I was assigned in 11th grade IB English <br>
+Written April 4th 2019*
+
 <h2 align = "center" > The Relativity of Reality <br> My Thoughts on 1984 </h2>
 
 
