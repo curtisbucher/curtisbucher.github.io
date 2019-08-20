@@ -1,0 +1,19 @@
+<div class="interests">
+    <h2>{{ include.title }}</h2>
+    <table>
+        <tr>
+            {% for column in include.data_file %}
+            <th>
+                <h3 style="text-align: center"> {{ column.title }} </h3>
+            </th>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for column in include.data_file %}
+            <td id="text" style="width: 33vw;">
+                <h4>{{ column.text }}
+            </td>
+            {% endfor %}
+        </tr>
+    </table>
+</div>
