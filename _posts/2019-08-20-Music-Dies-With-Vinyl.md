@@ -1,7 +1,8 @@
 *This piece appears unedited from a free choice writing essay I was assigned in 11th grade IB English*
+<br>
 *Written Dec 10th 2018*
 
-##Music Dies With Vinyl##
+<h2 align = "center" > Music Dies With Vinyl </h2>
 
 <p>You are probably going to peg me as some arrogant douchebag for saying this, but I truly enjoy listening to vinyl records more than streaming. I could state some bullshit about fidelity and analog sound, but honestly, vinyl is just a more engaging, tactile medium than digital, and I’m prepared to defend that assertion.
 </p>
