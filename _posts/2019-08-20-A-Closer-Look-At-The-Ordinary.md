@@ -1,7 +1,7 @@
 *This piece appears unedited from a free choice writing essay I was assigned in 11th grade IB English* <br> 
 *Written Jan 27th 2019*
 
-<h2> A Closer Look at the Ordinary <h2>
+<h2 align = "center"> A Closer Look at the Ordinary </h2>
 
 
 <p>		Life centers around the bedroom. Every day starts and ends in the bedroom. The bedroom is where we go as a refuge from the confusion and complications of life. Our rooms fill an important role in our lives, and likewise, they reflect who we are as people. One may put up posters of a band they enjoy, or picture frames of beloved family members to express their interests and individuality. One’s bedroom is an incredibly accurate representation of the owner.</p> 
