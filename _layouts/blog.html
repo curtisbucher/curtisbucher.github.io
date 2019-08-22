@@ -1,3 +1,8 @@
+<header>
+  <title>Curtis Bucher's Blog</title>
+  <link rel="icon" type="image/png" href="{{site.baseurl}}/assets/favicon.png">
+
+</header>
 <h2>Archive</h2>
 {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %b'"  %}
 {% for yearMonth in postsByYearMonth %}
