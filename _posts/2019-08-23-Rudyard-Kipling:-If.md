@@ -1,5 +1,5 @@
-<p>If-</p>
-<p>Rudyard Kipling</p>
+<h2>If</h2>
+<p>by Rudyard Kipling</p>
 <br>
 If you can keep your head when all about you   
     Are losing theirs and blaming it on you,   
