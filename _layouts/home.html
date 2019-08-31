@@ -140,6 +140,17 @@
         a:hover {
             color: #4488DD;
         }
+
+        #button {
+            display: inline-block;
+            outline: 3px solid #3377CC;
+            color: #3377CC;
+
+            font-size: 21pt;
+            font-weight: bold;
+            text-align: left;
+            padding: 0px 5vw 0px 5vw;
+        }
     </style>
 
     <meta name="google-site-verification" content="XDLt44oNKgPQ672DG00PkfKRp2PPneYLCt7MT2uB58w" />
@@ -158,7 +169,7 @@
         {% include columns.html data_file=site.data.interests title="My Interests" %}
 
         {% include topic.html data_file=site.data.software_projects name = "Software Projects" %}
-
+        <div><a href="https://github.com/curtisbucher">More Software Projects</a></div>
 
         {% include topic.html data_file=site.data.hardware_projects name = "Hardware Projects" %}
 
