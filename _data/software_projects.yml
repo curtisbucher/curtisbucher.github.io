@@ -1,6 +1,6 @@
 - title: Votify
   title_link: https://github.com/curtisbucher/Votify
-  photo: https://mattymacchiato.com/wp-content/uploads/2019/02/spotify-logo.png
+  photo: "/assets/votify.png"
   data: Votify was a project that I came up with when my freinds and I all disagreed on the songs to play when we were listening to music. I thought it would be really cool to, using Python and Spotify's web API, create a service that allowed people to vote on the next song that would play in their queue. I am using a server that allows people to navigate to a website on their phone and make a selection from a list of four songs to play. I modelled the UI after the game Kahoot. I am currently still working on the project, but I expect it to be completed very soon.
 
 - title: Computer Chess
@@ -15,7 +15,7 @@
 
 - title: Planet Explorer
   title_link: "https://github.com/curtisbucher/Planet-Explorer"
-  photo: "/assets/spaceship.png"
+  photo: "/assets/space_explorer.png"
   data: Planet Explorer is a game I created after reading an article on hashing and random noise generation. Less of a game than a proof of concept, planet explorer follows a lone astronaught as he navigates an infinite number of infinitely large, procedurely generated universes. The universes contains procedurely generated stars and planets, and includes realistic space physics.
 
 - title: Tank Commander
