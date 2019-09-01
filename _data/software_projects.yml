@@ -5,7 +5,7 @@
 
 - title: Computer Chess
   title_link: https://github.com/curtisbucher/Computer-Chess
-  photo: https://betacssjs.chesscomfiles.com/bundles/web/images/offline-play/standardboard.png  
+  photo: "/assets/chessboard.png"
   data: I beleive it is almost a right of passage for any young programmer to create a chess program. It is a fun challenge, and a project that can constantly be improved and worked on. I am constantly working on this project, but it wasn't untill recently that the computer beat me in chess for the first time. I am by no means good at chess, but it was very exciting to watch.
 
 - title: Desert Island
