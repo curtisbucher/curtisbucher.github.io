@@ -1,0 +1,16 @@
+<div class="topic">
+    <h2>{{ include.name }}</h2>
+    <table>
+        {% for project in include.data_file %}
+        <tr>
+            <td>
+                <img src=" {{ project.photo }} "></img>
+                <a href=" {{ project.title_link }} ">
+                    <h3> {{ project.title }}</h3>
+                </a>
+                <h4> {{ project.data }}</h4>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html style="width: 100%;">
+
+<head>
+    <title>Curtis Bucher</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,200&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        if (screen.width >= 480) {
+            location.href = 'http://curtisbucher.com';
+        }
+    </script>
+    <style>
+        body {
+            font-family: "Muli", sans-serif;
+            margin: 0;
+            width: 100vw;
+            height: 88vh;
+            text-align: center;
+            background-color: #EEEEEE;
+            font-size: 5vh;
+            color: #101010;
+            font-weight: 200;
+        }
+
+        .parallax {
+            background-color: #BBBBBB;
+            background-image: url("{{site.baseurl}}/assets/mr.jpeg");
+            background-size: auto 100%;
+
+            height: 100vh;
+            /* 1 / scale factor */
+            width: 100vw;
+            /* 1 / scale factor */
+
+            /* Create the parallax scrolling effect */
+            background-position: top;
+            background-repeat: no-repeat;
+
+        }
+
+        .parallax #title {
+            font-size: 7vh;
+            font-weight: 900;
+            color: white;
+            padding: 43vh 0 0 0;
+        }
+
+        .content {
+            position: relative;
+        }
+
+        .topic {
+            size: 100%;
+            padding: 0vh 0vw 12vh 0vw;
+            overflow: auto;
+        }
+
+        .topic img {
+            object-fit: cover;
+            width: 90vw;
+            height: 90vw;
+        }
+
+
+        .interests {
+            padding: 0vh 0vw 12vh 0vw;
+        }
+
+        .contactme table {
+            width: 30vw;
+            margin: auto;
+        }
+
+        .contactme h4 {
+            margin: 0vw;
+            text-align: center;
+        }
+
+        .contactme img {
+            padding: 0vh 3vw;
+            width: 5vh;
+            height: 5vh;
+        }
+
+        .contactme img:hover {
+            opacity: 0.8;
+        }
+
+        #spacer {
+            height: 10vh;
+        }
+
+        h2 {
+            font-weight: bold;
+            float: center;
+            font-size: 4vh;
+        }
+
+        h3 {
+            font-size: 3vh;
+            font-weight: bold;
+            text-align: left;
+            margin: 0px 5vw 0px 5vw;
+        }
+
+        h4 {
+            font-size: 3vh;
+            text-align: left;
+            font-weight: 200;
+            margin: 0px 5vw 0px 5vw;
+        }
+
+        table {
+            width: 100vw;
+        }
+
+        a {
+            color: #3377CC;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #4488DD;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parallax">
+        <div id="title">Curtis Bucher</div>
+    </div>
+    <div class="content">
+        {% include topic_mobile.html data_file=site.data.about_me name ="A little about me" %}
+
+        {% include topic_mobile.html data_file=site.data.interests title="My Interests" %}
+
+        {% include topic_mobile.html data_file=site.data.software_projects name = "Software Projects" %}
+
+        {% include topic_mobile.html data_file=site.data.hardware_projects name = "Hardware Projects" %}
+
+        <div class="contactme">
+            <h2>Let's get in touch!</h2>
+            <table>
+                <tr>
+                    <td><a href="https://www.instagram.com/curtisbucher/?hl=en"><img
+                                src="http://www.transparentpng.com/thumb/logo-instagram/zI6ZGS-black-logo-instagram-png-transparent.png"></img></a>
+                    </td>
+                    <td><a href="mailto:cpbucher5@gmail.com?Subject=Let's%20get%20in%20touch!"><img
+                                src="http://ksadgroup.com/wp-content/uploads/2016/05/email-logo-as-hi.png"></img></a>
+                    </td>
+                    <td><a href="https://github.com/curtisbucher?tab=repositories"><img
+                                src="https://image.flaticon.com/icons/svg/25/25231.svg"></img></a></td>
+                    <td><a href="https://hackaday.io/cpbucher5"><img
+                                src="https://www.sccpre.cat/mypng/full/119-1199984_hacking-logo-png-hack-a-day.png"></img></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</body>
+
+</html>
