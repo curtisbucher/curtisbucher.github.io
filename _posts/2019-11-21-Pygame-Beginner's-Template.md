@@ -1,6 +1,6 @@
 
 <center> <h2>Simple Pygame Template</h2> 
-The comments will help you to get a game up and running in no time. If you wish to do anything that is not included in this template, check stackoverflow.com for advice and code fragments.
+The comments will help you to get a game up and running in no time. If you wish to do anything that is not included in this template, check <a href = "https://www.stackoverflow.com">stackoverflow.com</a> for advice and code fragments.
 </center>
 <br>
 
@@ -72,3 +72,7 @@ while True:
     pygame.display.flip()
     fpsClock.tick(fps)
 ```
+
+For more information, check out the [pygame docs](https://www.pygame.org/docs), and online tutorials.
+
+To check out some of the games I have made myself, check out [my website](https://curtisbucher.com) and [my github](https://github.com/curtisbucher).
