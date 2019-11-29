@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Trip
+title: Test
 categories: [braiNIAC]
 tags: [EEPROM]
 ---
