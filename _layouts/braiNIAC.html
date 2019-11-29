@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <style>
+        html,
+        head {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body {
+            font-family: 'Muli', sans-serif;
+            ;
+            margin: 0;
+            width: 100vw;
+            height: 88vh;
+            text-align: center;
+            background-color: #EEEEEE;
+            font-size: 5vh;
+            color: #101010;
+        }
+
+
+        img {
+            width: 50vw;
+            padding: 0vh 25vw;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h3>the braiNIAC</h3>
+    </center>
+    <img src="/Users/curtisbucher/Desktop/curtisbucher.github.io/assets/IMG_0667.jpeg"></img>
+
+</body>
+<ul>
+    {% for post in braiNIAC %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+
+</html>
