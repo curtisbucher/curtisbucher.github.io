@@ -1,7 +1,7 @@
 ---
 title: Chess Competition
 layout: webpage
-image: "{{ site.baseurl }}/assets/chessboard.png"
+image: "curtisbucher.com/assets/chessboard.png"
 ---
 
 This is a test. 
