@@ -3,5 +3,5 @@ title: Chess Competition
 layout: webpage
 ---
 
-This is a test. 
-** I am Testing This **
+![](https://curtisbucher.com/assets/IMG_0668.jpeg)
+

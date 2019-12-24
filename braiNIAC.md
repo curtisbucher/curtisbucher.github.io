@@ -1,4 +1,4 @@
 ---   
 title: braiNIAC Home
-layout: braiNIAC
+layout: webpage
 ---
