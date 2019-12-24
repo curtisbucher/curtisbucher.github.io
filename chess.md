@@ -1,7 +1,7 @@
 ---
-title: Curtis Bucher
+title: Chess Competition
 layout: webpage
-image: /assets/chessboard.png
+image: "{{ site.baseurl }}/assets/chessboard.png"
 ---
 
 This is a test. 
