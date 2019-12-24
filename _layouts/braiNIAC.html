@@ -14,10 +14,8 @@
 
         body {
             font-family: 'Muli', sans-serif;
-            ;
-            margin: 0;
             width: 100vw;
-            height: 88vh;
+            height: 100vh;
             text-align: center;
             background-color: #EEEEEE;
             font-size: 5vh;
@@ -26,11 +24,11 @@
 
         img {
             width: 50vw;
-            padding: 0vh 25vw;
+            display: inline-block;
         }
 
         ul {
-            padding: 0vh 25vw;
+            float: left;
             list-style-type: none;
         }
     </style>
@@ -40,9 +38,10 @@
     <center>
         <h3>the braiNIAC</h3>
     </center>
-    <img src="/assets/IMG_0667.jpeg"></img>
 
-    <h5>Project Logs</h5>
+    <img src="https://curtisbucher.com/assets/IMG_0667.jpeg"></img>
+
+    <h5 style="float: left; display: inline-block;">Project Logs</h5>
     <ul>
         {% for post in site.categories.braiNIAC %}
         <li>
