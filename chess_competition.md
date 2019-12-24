@@ -1,7 +1,7 @@
 ---
 title: Curtis Bucher
-layout: home_mobile
+layout: 
 ---
 
 This is a test. 
-** I am Testing This**
+** I am Testing This **
