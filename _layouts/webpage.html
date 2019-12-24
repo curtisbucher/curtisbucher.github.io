@@ -26,13 +26,23 @@
             font-family: 'Muli', sans-serif;
 
             text-align: center;
-            line-height: 10vh;
+            font-weight: 900;
+            line-height: 20vh;
             color: white;
-            font-size: 5vh;
+            font-size: 8vh;
+        }
+
+        .title {
+            height: 10vh;
+            text-align: center;
+            line-height: 10vh;
+            font-size: 3vh;
+            font-weight: 700;
+            color: #101010;
         }
 
         .content {
-            width: 80vw;
+            width: 70vw;
             min-height: 80vh;
             max-height: auto;
             margin: auto;
@@ -42,8 +52,11 @@
 </head>
 
 <body>
-    <div class="header"> Curtis Bucher <br> {{ page.title }} </div>
-    <div class="content">{{ content }}</div>
+    <div class="header"> Curtis Bucher </div>
+    <div class="content">
+        <div class="title">{{ page.title }}</div>
+        {{ content }}
+    </div>
 </body>
 
 </html>
