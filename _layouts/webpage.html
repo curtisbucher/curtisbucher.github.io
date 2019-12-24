@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <style>
+        html,
+        head,
+        body {
+            width: 100%;
+            margin: 0vw;
+            background-color: #EEEEEE;
+        }
+
+        .header {
+            width: 100vw;
+            height: 20vh;
+            background-image: url("{{site.baseurl}}/{{ page.image }}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: 'Muli', sans-serif;
+
+            text-align: center;
+            line-height: 10vh;
+            color: white;
+            font-size: 5vh;
+        }
+
+        .content {
+            width: 80vw;
+            min-height: 80vh;
+            max-height: auto;
+            margin: auto;
+            color: #101010;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"> {{ page.title }} </div>
+    <div class="content">{{ content }}</div>
+</body>
+
+</html>

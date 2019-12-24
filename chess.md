@@ -1,6 +1,7 @@
 ---
 title: Curtis Bucher
-layout: 
+layout: webpage
+image: /assets/chessboard.png
 ---
 
 This is a test. 
