@@ -1,5 +1,4 @@
 <h2 align = "center"> The Best Movies of All time </h2>
-<h3 align = "center"> In No Particular Order </h3>
 
 
 * <h4> Casablanca </h4> 
