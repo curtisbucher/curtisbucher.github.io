@@ -21,4 +21,9 @@
 - title: Tank Commander
   title_link: "https://github.com/curtisbucher/Tank-Commander"
   photo: "/assets/tank_sprite.png"
-  data: Tank Commander was my final project for a CS class I took Junior year. The goal of the game is to teach programming to children through the fun, tactical lense of trying to destroy an AI tank. I never got around to improving the game after I turned in my final project, but I love the concept of it. 
+  data: Tank Commander was my final project for a CS class I took Junior year. The goal of the game is to teach programming to children through the fun, tactical lense of trying to destroy an AI tank. I never got around to improving the game after I turned in my final project, but I love the concept of it.
+
+- title: Tanks
+  title_link: "/tanks"
+  photo: "/assets/tank.png"
+  data: I cannot take complete credit for this game. I wrote this game following a Unity tutorial, but was very proud of the final product. I never thought that I would could have the skills and recourses necessary to build a production quality 3D game, but Unity gave me that ability. After some work I was able to add the game to my website to play. Just click on the image of the tank."
