@@ -9,11 +9,14 @@
     <title>Curtis Bucher's Website</title>
     <style type="text/css">
         body {
+            font-family: "Cutive Mono", monospace;
+            font-style: normal;
+            font-size: 18px;
+            font-weight: 900;
+
             margin: 40px auto;
             max-width: 650px;
             line-height: 1.6;
-            font-size: 18px;
-            font-weight: 900;
             color: #444;
             padding: 0 10px;
             background-color: #fff;
@@ -31,30 +34,40 @@
             font-weight: inherit;
         }
 
+        h4 {
+            text-transform: uppercase;
+            font-style: italic;
+        }
+
+        /* h4::before{
+            content: "* * * ";
+        }
+        h4::after {
+            content: " * * *";
+        } */
+
+
+
         /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
         @media screen and (min-width: 601px) {
-        h2 { font-size: 30px;}
-        h4 { font-size: 20px;}
-        h5 { font-size: 18px;}
+        h1 { font-size: 30px;}
+        h2 { font-size: 20px;}
+        h3 { font-size: 18px;}
         td { font-size: 18px;}
-        body { font-size: 18px;}
+        body, h4 { font-size: 18px;}
         }
 
         /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
         @media screen and (max-width: 600px) {
-        h2 { font-size: 22px;}
-        h4 { font-size: 14px;}
-        h5 { font-size: 12px;}
+        h1 { font-size: 22px;}
+        h2 { font-size: 14px;}
+        h3 { font-size: 12px;}
         td { font-size: 11px;}
-        body { font-size: 14px;}
+        body, h4 { font-size: 14px;}
         }
 
         a {
             color: #CE2029;
-        }
-        body {
-            font-family: "Cutive Mono", monospace;
-            font-style: normal;
         }
         img {
             border-radius: 10%
@@ -73,9 +86,9 @@
         <tr>
             <td width= 50% ><img width= 100% src="media/avatar.jpeg" class="cell1"></td>
             <td class="cell2">
-                <h2>Curtis Bucher</h2>
-                <h4>Design Verification at Apple </h4>
-                <h5>San Diego, CA</h5>
+                <h1>Curtis Bucher</h1>
+                <h2>Design Verification at Apple </h2>
+                <h3>San Diego, CA</h3>
                 <br>
                 <span>
                     <a href="https://github.com/curtisbucher?tab=repositories">Github</a>
@@ -88,15 +101,15 @@
         </tr>
     </table>
 
-    <p>EDUCATION</p>
+    <h4>Education</h4>
     <p>BS in Computer Engineering, <i>Cal Poly San Luis Obispo</i></p>
     <br>
 
-    <p>SKILLS</p>
+    <h4>Skills</h4>
     <p>Python, C++, SystemVerilog, Linux, Design Verification, Computer Architecture</p>
     <br>
 
-    <p>INTERESTS</p>
+    <h4>Interests</h4>
     <ul>
         <li>Computer Architecture</li>
         <li>Python</li>
@@ -106,7 +119,7 @@
     </ul>
     <br>
 
-    <p>PROJECTS</p>
+    <h4>Projects</h4>
     <ul>
         <li><a href="https://github.com/curtisbucher/pydve">PyDVE</a> - <i>An Open-Source Python-Based Design Verification Framework for RTL Emulation</i>
             (<a href="media/pydve.pdf">Paper</a>)
@@ -121,7 +134,7 @@
 
     <center>* * *</center>
 
-    <p>CONTACT</p>
+    <h4>Contact</h4>
     <p>cpbucher5 at gmail dot com</p>
 
 </body>
