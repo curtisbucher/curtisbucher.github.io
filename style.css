@@ -1,0 +1,68 @@
+body {
+    font-family: "Cutive Mono", monospace;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 900;
+
+    margin: 40px auto;
+    max-width: 650px;
+    line-height: 1.6;
+    color: #444;
+    padding: 0 15px;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+table,tr {
+    width: 100%;
+    padding: 0;
+}
+
+h1, h2, h3, h5, h4, h6{
+    margin:0;
+    padding:0;
+    font-weight: inherit;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+/* h4::before{
+    content: "* * * ";
+}
+h4::after {
+    content: " * * *";
+} */
+
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+h1 { font-size: 30px;}
+h2 { font-size: 20px;}
+h3 { font-size: 18px;}
+td { font-size: 18px;}
+body, h4 { font-size: 18px;}
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+h1 { font-size: 20px;}
+h2 { font-size: 14px;}
+h3 { font-size: 12px;}
+td { font-size: 11px;}
+.collapse {display: none;}
+body, h4 { font-size: 14px;}
+}
+
+a {
+    color: #CE2029;
+}
+img {
+    border-radius: 10px;
+}
+li {
+    padding:5px;
+}
