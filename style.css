@@ -1,3 +1,24 @@
+@font-face {
+    font-family: PolymathDisplay;
+    src: url(fonts/PolymathDispDemo-Medium.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: VulfMono;
+    src: url(fonts/VulfMonoDemo-Light.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: VulfMono;
+    src: url(fonts/VulfMonoDemo-LightItalic.otf);
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: FatFace;
+    src: url(fonts/OhnoFatFaceDemo-12PtCondensed.otf);
+}
+
 body {
     /* font-family: "Cutive Mono", monospace; */
     font-family: VulfMono;
@@ -15,26 +36,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-    font-family: Obviously;
-    src: url(ObviouslyDemo-NarrowBold.otf);
-    font-weight: bold;
-}
-@font-face {
-    font-family: VulfMono;
-    src: url(VulfMonoDemo-Light.otf);
-    font-weight: normal;
-}
-@font-face {
-    font-family: VulfMono;
-    src: url(VulfMonoDemo-LightItalic.otf);
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: FatFace;
-    src: url(OhnoFatFaceDemo-12PtCondensed.otf);
-}
 table,tr {
     width: 100%;
     padding: 0;
@@ -47,7 +48,7 @@ h1, h2, h3, h5, h4, h6{
 }
 
 h1 {
-    font-family: FatFace;
+    font-family: PolymathDisplay;
 }
 
 h4 {
@@ -55,21 +56,28 @@ h4 {
     font-style: italic;
 }
 
-/* h4::before{
-    content: "* * * ";
+/* h4::before {
+    content: "~~ ";
 }
 h4::after {
-    content: " * * *";
+    content: " ~~";
 } */
+h4 {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
 
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
 h1 { font-size: 48px;}
-h2 { font-size: 18px;}
+h2 { font-size: 14px;}
 h3 { font-size: 14px;}
-td { font-size: 18px;}
-body, h4 { font-size: 18px;}
+td { font-size: 14px;}
+body, h4 { font-size: 14px;}
+
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
