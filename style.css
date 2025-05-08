@@ -23,7 +23,6 @@ body {
     /* font-family: "Cutive Mono", monospace; */
     font-family: VulfMono;
     font-style: normal;
-    font-size: 18px;
     font-weight: 900;
 
     margin: 40px auto;
@@ -73,21 +72,16 @@ h4 {
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
 h1 { font-size: 48px;}
-h2 { font-size: 14px;}
-h3 { font-size: 14px;}
-td { font-size: 14px;}
-body, h4 { font-size: 14px;}
-
+h2, h3, h4, body { font-size: 14px;}
+td {font-size: 14px;}
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
 h1 { font-size: 18px;}
-h2 { font-size: 12px;}
-h3 { font-size: 12px;}
-td { font-size: 12px;}
+h2, h3, h4, body{ font-size: 12px;}
+td {font-size: 12px;}
 .collapse {display: none;}
-body, h4 { font-size: 14px;}
 }
 
 a {
