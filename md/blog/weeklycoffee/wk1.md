@@ -1,8 +1,8 @@
 ---
 weeknum: 1
 date: October 16, 2024
-template: ../../assets/templates/template.html
-root: ../../
+template: ../../../templates/template.html
+root: ../../../
 ---
 <b>Weekly Coffee #1</b>
 *October 16, 2024*
@@ -18,8 +18,8 @@ This letter is going to be a bit longer since so much has happened in the last f
 
 - I moved down to Del Mar in August to start a job at Apple, doing design verification for Apple’s display SOC. In English, that means that I write software to test the computer chips that Apple makes for phone screens.
 - I recently started at a new church down here as well, [The Fields](https://thefieldschurch.org/) in Carlsbad. It has been absolutely incredible so far, filled with great teaching, and a great community who are absolutely on fire for the Lord. I got involved in the young adults group, which is held at the head pastor, David’s house. David is an amazing guy, incredibly down to earth, but blessed with an amazing knowledge and passion for theology. I joined another group of men who meet at his house monthly to read through Systematic Theology, and learn what it means to lead our church communities. Seriously, the community I found here has been such a clear answer to prayers I had been praying for months before moving down here.
-- Two weeks ago I [tried out surfing](https://curtisbucher.com/media/wk1_surfing.jpeg) for the first (ish) time with the young adults group. I made it my goal to stand up, which I did, even if it was just the whitewash. Loved it, gonna keep going, but I definitely got spooked by the amount of sting rays in San Diego. In a couple hours out there I stepped on three, which was when I finally decided to head back in…
-- Last weekend, the young adults group went out to Catalina for a day trip. We went snorkeling, which I didn’t know you could do in Catalina, and went to a neat little SCUBA museum on the water. It was this dude’s passion project, a tiny little room packed with a bunch of old scuba gear. Highlights include a [Soviet era *combat* SCUBA suit](https://curtisbucher.com/media/wk1_scuba2.jpeg) with accompanying speargun, and a [personal submarine suit](https://curtisbucher.com/media/wk1_scuba1.jpeg) that looks like something from the Fallout video game series.
+- Two weeks ago I [tried out surfing](../../../assets/images/wk1_surfing.jpeg) for the first (ish) time with the young adults group. I made it my goal to stand up, which I did, even if it was just the whitewash. Loved it, gonna keep going, but I definitely got spooked by the amount of sting rays in San Diego. In a couple hours out there I stepped on three, which was when I finally decided to head back in…
+- Last weekend, the young adults group went out to Catalina for a day trip. We went snorkeling, which I didn’t know you could do in Catalina, and went to a neat little SCUBA museum on the water. It was this dude’s passion project, a tiny little room packed with a bunch of old scuba gear. Highlights include a [Soviet era *combat* SCUBA suit](../../../assets/images/wk1_scuba2.jpeg) with accompanying speargun, and a [personal submarine suit](../../../assets/images/wk1_scuba1.jpeg) that looks like something from the Fallout video game series.
 - The highlight of the Catalina trip though was definitely the opportunities for evangelism that the Lord gave us. On the Ferry back we were able to share our faith with the girl sitting behind us, who overheard us discussing theology, and we had the opportunity to witness to one of the guys coming with us on the trip, who was brand new in his walk with the Lord.
 <br>
 
@@ -33,7 +33,7 @@ This letter is going to be a bit longer since so much has happened in the last f
 
 **Song of the Week**
 An old photo from my time in Portland that I recently had developed.
-![Oregon](https://curtisbucher.com/media/wk1_oregon.jpeg)
+![Oregon](../../../assets/images/wk1_oregon.jpeg)
 <br>
 
 **Picture of the Week**

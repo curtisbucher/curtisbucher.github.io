@@ -1,3 +1,2 @@
 ## Building
-from `Desktop/Projects`, run `python -m StaticShock --input-dir /Users/curtisbucher/Desktop/Projects/curtisbucher.github.i
-o/md --output-dir /Users/curtisbucher/Desktop/Projects/curtisbucher.github.io/rendered`
+from `Desktop/Projects`, run `python -m StaticShock --input-dir /Users/curtisbucher/Desktop/Projects/curtisbucher.github.io/md --output-dir /Users/curtisbucher/Desktop/Projects/curtisbucher.github.io/rendered`

@@ -1,8 +1,8 @@
 ---
 weeknum: 7
 date: January 11, 2024
-template: ../../assets/templates/template.html
-root: ../../
+template: ../../../templates/template.html
+root: ../../../
 ---
 **Weekly Coffee #7**
 *January 11, 2024*
@@ -21,11 +21,11 @@ root: ../../
 
 **Whats Been Up:**
 
-- Most of my time over Christmas was spent in Newport Beach with my family. It is always incredibly encouraging and refreshing to spend time where I grew up. I really felt back to my roots this time around, surrounded by [extended family](https://curtisbucher.com/media/wk7_cousins.jpeg) and decades long friends. I believe I have mentioned it before, but it can also be a challenge to feel so deeply rooted to my old home. It feels like I am bit stretched thin between everywhere I have lived and built connections.
-    - A particularly special moment for me was shared with my Grandma, when she showed me a [book of the 129 people](https://curtisbucher.com/media/wk7_grandma.jpeg) who have come to live with her since 1968, including my Mom before she married my Dad.
+- Most of my time over Christmas was spent in Newport Beach with my family. It is always incredibly encouraging and refreshing to spend time where I grew up. I really felt back to my roots this time around, surrounded by [extended family](../../../assets/images/wk7_cousins.jpeg) and decades long friends. I believe I have mentioned it before, but it can also be a challenge to feel so deeply rooted to my old home. It feels like I am bit stretched thin between everywhere I have lived and built connections.
+    - A particularly special moment for me was shared with my Grandma, when she showed me a [book of the 129 people](../../../assets/images/wk7_grandma.jpeg) who have come to live with her since 1968, including my Mom before she married my Dad.
     - My parents also gave me a mysterious letter from a distant relative that was addressed to me shortly after I was born. It referenced a clay figurine man that she wanted me to have, but none of us had any idea exactly what or where it was for the last 20 years...
 
-- After Christmas, I went up to Sacramento for [New Years with Jenny](https://curtisbucher.com/media/wk7_jenny.jpeg). On New Years Eve, I got to visit [Lake Tahoe](https://curtisbucher.com/media/wk7_tahoe2.JPG) for the first time, which was beautiful.
+- After Christmas, I went up to Sacramento for [New Years with Jenny](../../../assets/images/wk7_jenny.jpeg). On New Years Eve, I got to visit [Lake Tahoe](../../../assets/images/wk7_tahoe2.JPG) for the first time, which was beautiful.
 
 <br>
 
@@ -56,5 +56,5 @@ root: ../../
 <br>
 
 **Picture of the Week**
-![Lake Tahoe](https://curtisbucher.com/media/wk7_tahoe.JPG)
+![Lake Tahoe](../../../assets/images/wk7_tahoe.JPG)
 Lake Tahoe

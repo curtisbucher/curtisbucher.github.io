@@ -1,8 +1,8 @@
 ---
 weeknum: 3
 date: November 6, 2024
-template: ../../assets/templates/template.html
-root: ../../
+template: ../../../templates/template.html
+root: ../../../
 ---
 **Weekly Coffee #4**
 *November 6, 2024*
@@ -16,9 +16,9 @@ I have big plans for this newsletter. After writing the first two *Weekly Coffee
 
 **Whats Been Up:**
 
-  - Maria [broke down](https://curtisbucher.com/media/wc3_maria.jpeg) driving home to San Diego from Orange County. It broke down in the best possible way though. It was incredibly dramatic and exciting, with steam pouring out of my engine on the freeway and a bunch of flashing warnings on the dash. Ultimately though it ended up being a cheap, easy fix. I ended up borrowing my uncle’s Tesla Roadster to get around for the day, which was a remarkable experience after a lifetime of driving 20-year-old beaters like Maria, which had been spraying coolant all over the 55.
+  - Maria [broke down](../../../assets/images/wc3_maria.jpeg) driving home to San Diego from Orange County. It broke down in the best possible way though. It was incredibly dramatic and exciting, with steam pouring out of my engine on the freeway and a bunch of flashing warnings on the dash. Ultimately though it ended up being a cheap, easy fix. I ended up borrowing my uncle’s Tesla Roadster to get around for the day, which was a remarkable experience after a lifetime of driving 20-year-old beaters like Maria, which had been spraying coolant all over the 55.
     - She took 3 days to fix, which is why I have been stranded in OC since Sunday
-  - I got to meet Brandt and Ashley’s [new puppy](https://curtisbucher.com/media/wc3_puppy.jpeg) scooter for the first time! Prior to meeting him, I didn’t understand the millennial tendency to refer to pets like their children, but I honestly get it now.
+  - I got to meet Brandt and Ashley’s [new puppy](../../../assets/images/wc3_puppy.jpeg) scooter for the first time! Prior to meeting him, I didn’t understand the millennial tendency to refer to pets like their children, but I honestly get it now.
   - I had to order an Uber for the first time in my life to get up to the mechanic’s last week. For some reason I have been opposed to getting the app up until now. I just don’t think it will ever not be weird to pay a stranger to drive me around…
   - I have completed the scanner on my programming language project and have started working on the parser.
     - For those who don’t know, but still care for some reason, the scanner is responsible for reading over the entire text of a computer program and divide it up into *lexemes*. In terms of human language, this would be analogous to dividing up series of letters into individual words. Next week I will be working on the parser, which is basically forming those words into sentences according to that language’s *grammar*.
@@ -40,4 +40,4 @@ I have big plans for this newsletter. After writing the first two *Weekly Coffee
 
 **Picture of the Week:**
 From a trip to Seattle 6 months ago...
-  ![From a trip to Seattle 6 months ago](https://curtisbucher.com/media/wc3_boats.JPG)
+  ![From a trip to Seattle 6 months ago](../../../assets/images/wc3_boats.JPG)

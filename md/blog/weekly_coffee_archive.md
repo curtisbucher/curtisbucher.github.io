@@ -1,6 +1,6 @@
 ---
-template: ../assets/templates/template.html
-root: ../
+template: ../../templates/template.html
+root: ../../
 ---
 # Weekly Coffee Archive
 

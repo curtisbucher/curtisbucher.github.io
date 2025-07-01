@@ -1,8 +1,8 @@
 ---
 weeknum: 2
 date: October 22, 2024
-template: ../../assets/templates/template.html
-root: ../../
+template: ../../../templates/template.html
+root: ../../../
 ---
 **Weekly Coffee #2**
 *October 22, 2024*
@@ -36,4 +36,4 @@ I am hoping to cultivate something close to that, but we’ll see how far I get.
 
 **Photo of the Week**
 At Point Loma, Jenny and I got to visit with a friend of hers, who has a painting that Jenny did a couple years back. I really think it is one of the most remarkably paintings I have seen in my life. The amount of creativity it would take to compose a painting this varied in style and rich in meaning absolutely blows my mind. I’ll see you guys next week!
-![Jenny Picture](https://curtisbucher.com/media/wc1_jenny.jpeg)
+![Jenny Picture](../../../assets/images/wk1_jenny.jpeg)

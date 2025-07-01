@@ -1,8 +1,8 @@
 ---
 weeknum: 4
 date: November 18, 2024
-template: ../../assets/templates/template.html
-root: ../../
+template: ../../../templates/template.html
+root: ../../../
 ---
 **Weekly Coffee #4**
 *November 18, 2024*
@@ -13,9 +13,9 @@ This week was a busy one for me, so this edition of <i>Weekly Coffee</i> will be
 **Whats Been Up:**
 
 - I went to another Eastern Orthodox *Vesperal Liturgy* last week. Always interesting to see how different people practice their faith. Although much of the Orthodox practices and liturgy are challenging to me, and contrary to some of my own beliefs I do feel that it can broaden my understanding of God to see the diversity of faith practice that people from different backgrounds have.
-- Jenny came down this weekend, which was awesome. We went up to Orange County to see <a href='https://curtisbucher.com/media/wk4_poe.jpeg'>Prince of Eden in concert</a>. Admittedly, he is a better studio artist than live performer, but it was still a great experience. POE was one of the <a href='https://open.spotify.com/artist/29Wvrc4vfXuf9eMexefk7N?si=g6RY7m17T9iXvOql39oTLA'>songs of the week</a> in a past <i>Weekly Coffee</i>.
-- Jenny and I also went to my boss’ <a href='https://curtisbucher.com/media/wk4_diwali.jpeg'>Diwali party</a> in San Diego. Diwali is a Hindu holiday that was explained to me as having something to do with light, color and triumph over evil. It also was a fun reason to dress up in traditional Indian clothes, which were loaned to me by my pastor.
-- Last week, I went up to LA with some friends to <a href='https://curtisbucher.com/media/wk4_hollywood.jpeg'>hike the Hollywood sign</a>, which I had never been to before. Would’ve been in last week’s <i>Weekly Coffee</i> but I didn't have time to put one out.
+- Jenny came down this weekend, which was awesome. We went up to Orange County to see <a href='../../../assets/images/wk4_poe.jpeg'>Prince of Eden in concert</a>. Admittedly, he is a better studio artist than live performer, but it was still a great experience. POE was one of the <a href='https://open.spotify.com/artist/29Wvrc4vfXuf9eMexefk7N?si=g6RY7m17T9iXvOql39oTLA'>songs of the week</a> in a past <i>Weekly Coffee</i>.
+- Jenny and I also went to my boss’ <a href='../../../assets/images/wk4_diwali.jpeg'>Diwali party</a> in San Diego. Diwali is a Hindu holiday that was explained to me as having something to do with light, color and triumph over evil. It also was a fun reason to dress up in traditional Indian clothes, which were loaned to me by my pastor.
+- Last week, I went up to LA with some friends to <a href='../../../assets/images/wk4_hollywood.jpeg'>hike the Hollywood sign</a>, which I had never been to before. Would’ve been in last week’s <i>Weekly Coffee</i> but I didn't have time to put one out.
 <br>
 
 **What I've Been Reading/Listening To/Watching:**
@@ -38,4 +38,4 @@ This week was a busy one for me, so this edition of <i>Weekly Coffee</i> will be
 <br>
 
 **Picture of the Week:**
-![Morro Bay, from a visit to SLO last month](https://curtisbucher.com/media/wk4_morro.jpeg)
+![Morro Bay, from a visit to SLO last month](../../../assets/images/wk4_morro.jpeg)

@@ -1,8 +1,8 @@
 ---
 weeknum: 5
 date: November 25, 2024
-template: ../../assets/templates/template.html
-root: ../../
+template: ../../../templates/template.html
+root: ../../../
 ---
 **Weekly Coffee #5**
 *November 25, 2024*
@@ -12,7 +12,7 @@ I am up in Newport Beach at my parents' house this week for Thanksgiving. It's b
 
 **What’s Been Up:**
 
-- I went [surfing](https://curtisbucher.com/media/wk5_surfing.jpeg) on Saturday for the third time, and this time my brother Jonathan came along! That session had the largest waves I have truly attempted so far, which was spooky. Admittedly though, they were still relatively small.
+- I went [surfing](../../../assets/images/wk5_surfing.jpeg) on Saturday for the third time, and this time my brother Jonathan came along! That session had the largest waves I have truly attempted so far, which was spooky. Admittedly though, they were still relatively small.
     - When I go surfing, that I am irrationally afraid of cutting a **real** surfer off, which keeps me from trying to catch any **real** waves. I'll probably have to get over that fear eventually...
 
 Besides that, it was a relatively slow week. Work has picked up a bit as we near a tapeout deadline, so that has been occupying a lot of my bandwidth recently.
@@ -34,5 +34,5 @@ I hadn't heard of this artist prior to this week, but I have been listening to t
 <br>
 
 **Picture of the Week:**
-![A Painting of SLO County By Jenny](https://curtisbucher.com/media/wk5_painting.jpeg)
+![A Painting of SLO County By Jenny](../../../assets/images/wk5_painting.jpeg)
 Jenny painted this for me for our 6th month anniversary, knowing how much I missed San Luis Obispo. See you next week!
