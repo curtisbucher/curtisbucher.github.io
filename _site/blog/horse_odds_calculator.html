@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horse Odds Calculator</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 1.5em;
+      max-width: 900px;
+      margin: auto;
+      background: #fefefe;
+    }
+    textarea {
+      width: 100%;
+      height: 140px;
+      font-family: monospace;
+      margin-top: 0.5em;
+    }
+    button, select {
+      margin-top: 1em;
+      padding: 0.6em 1.2em;
+      font-size: 1em;
+    }
+    pre {
+      white-space: pre-wrap;
+      background: #f4f4f4;
+      padding: 1em;
+      margin-top: 1.5em;
+      border-left: 5px solid #ccc;
+      overflow-x: auto;
+    }
+    h1 {
+      font-size: 1.6em;
+    }
+    .info {
+      margin-top: 1em;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Horse Betting Odds Calculator</h1>
+  <label for="mode">Input Mode:</label>
+  <select id="mode" onchange="updateMode()">
+    <option value="prob">Probabilities (e.g. Horse A: 0.35)</option>
+    <option value="odds">Traditional Odds (e.g. Horse A: 5:2)</option>
+  </select>
+
+  <p id="entry-label">Enter horses and their <strong>probabilities</strong>:</p>
+  <textarea id="input" placeholder="Horse A: 0.4&#10;Horse B: 0.3&#10;Horse C: 0.2&#10;Horse D: 0.1"></textarea>
+  <br>
+  <button onclick="calculate()">Calculate Odds</button>
+
+  <pre id="output">Results will appear here.</pre>
+
+  <script>
+    function updateMode() {
+      const mode = document.getElementById('mode').value;
+      const label = document.getElementById('entry-label');
+      const input = document.getElementById('input');
+      if (mode === 'prob') {
+        label.innerHTML = "Enter horses and their <strong>probabilities</strong>:";
+        input.placeholder = "Horse A: 0.4\nHorse B: 0.3\nHorse C: 0.2\nHorse D: 0.1";
+      } else {
+        label.innerHTML = "Enter horses and their <strong>traditional odds</strong> (e.g. 5:2):";
+        input.placeholder = "Horse A: 4:1\nHorse B: 5:2\nHorse C: 7:2\nHorse D: 33:2";
+      }
+      document.getElementById('output').textContent = "Results will appear here.";
+    }
+
+    function parseInput(text, mode) {
+      const lines = text.trim().split('\n');
+      const horses = [];
+      for (let line of lines) {
+        const [namePart, valuePart] = line.split(':');
+        if (!namePart || !valuePart) continue;
+        const name = namePart.trim();
+        const valueStr = line.substring(line.indexOf(":") + 1).trim();
+
+        if (mode === 'prob') {
+          const p = parseFloat(valueStr);
+          if (!isNaN(p)) {
+            const num = (1 - p) / p;
+            horses.push({ name, p, odds: `${num.toFixed(2)}:1` });
+          }
+        } else if (mode === 'odds') {
+          const match = valueStr.match(/^(\d+)\s*:\s*(\d+)$/);
+          if (match) {
+            const num = parseFloat(match[1]);
+            const den = parseFloat(match[2]);
+            const impliedProb = den / (num + den);
+            horses.push({ name, p: impliedProb, odds: `${num}:${den}` });
+          }
+        }
+      }
+
+      // Normalize probabilities
+      const totalP = horses.reduce((sum, h) => sum + h.p, 0);
+      for (let h of horses) {
+        h.p /= totalP;
+      }
+
+      return horses;
+    }
+
+    function fairOdds(prob) {
+      return prob > 0 ? (1 / prob).toFixed(2) + "x" : "N/A";
+    }
+
+    function calculate() {
+      const mode = document.getElementById('mode').value;
+      const input = document.getElementById('input').value;
+      const horses = parseInput(input, mode);
+
+      if (horses.length < 2) {
+        document.getElementById("output").textContent = "Please enter at least 2 valid horses.";
+        return;
+      }
+
+      let out = "";
+
+      // Show both formats
+      out += `=== Horse Probabilities and Odds ===\n`;
+      for (let h of horses) {
+        const decimalOdds = ((1 - h.p) / h.p).toFixed(2);
+        const classicOdds = `${decimalOdds}:1`;
+        out += `${h.name}: P = ${h.p.toFixed(3)} | Odds ≈ ${classicOdds}\n`;
+      }
+
+      // Win
+      out += "\n=== Win Odds ===\n";
+      for (let h of horses) {
+        out += `${h.name}: ${fairOdds(h.p)} (P = ${h.p.toFixed(3)})\n`;
+      }
+
+      // Place
+      out += "\n=== Place Odds (1st or 2nd) ===\n";
+      for (let i = 0; i < horses.length; i++) {
+        const A = horses[i];
+        let placeProb = A.p;
+        for (let j = 0; j < horses.length; j++) {
+          if (i === j) continue;
+          const B = horses[j];
+          placeProb += B.p * (A.p / (1 - B.p));
+        }
+        out += `${A.name}: ${fairOdds(placeProb)} (P = ${placeProb.toFixed(3)})\n`;
+      }
+
+      // Show
+      out += "\n=== Show Odds (1st, 2nd, or 3rd) ===\n";
+      for (let i = 0; i < horses.length; i++) {
+        const A = horses[i];
+        let showProb = A.p;
+
+        for (let j = 0; j < horses.length; j++) {
+          if (i === j) continue;
+          const B = horses[j];
+          showProb += B.p * (A.p / (1 - B.p));
+          for (let k = 0; k < horses.length; k++) {
+            if (k === i || k === j) continue;
+            const C = horses[k];
+            const remaining = 1 - B.p - C.p;
+            if (remaining > 0) {
+              showProb += B.p * C.p * (A.p / remaining);
+            }
+          }
+        }
+
+        out += `${A.name}: ${fairOdds(showProb)} (P = ${showProb.toFixed(3)})\n`;
+      }
+
+      // Exacta
+      out += "\n=== Exacta (1st → 2nd) ===\n";
+      for (let i = 0; i < horses.length; i++) {
+        const A = horses[i];
+        for (let j = 0; j < horses.length; j++) {
+          if (i === j) continue;
+          const B = horses[j];
+          const prob = A.p * (B.p / (1 - A.p));
+          out += `${A.name} → ${B.name}: ${fairOdds(prob)} (P = ${prob.toFixed(4)})\n`;
+        }
+      }
+
+      // Trifecta
+      if (horses.length >= 3) {
+        out += "\n=== Trifecta (1st → 2nd → 3rd) ===\n";
+        for (let i = 0; i < horses.length; i++) {
+          const A = horses[i];
+          for (let j = 0; j < horses.length; j++) {
+            if (j === i) continue;
+            const B = horses[j];
+            for (let k = 0; k < horses.length; k++) {
+              if (k === i || k === j) continue;
+              const C = horses[k];
+              const prob = A.p * (B.p / (1 - A.p)) * (C.p / (1 - A.p - B.p));
+              out += `${A.name} → ${B.name} → ${C.name}: ${fairOdds(prob)} (P = ${prob.toFixed(5)})\n`;
+            }
+          }
+        }
+      }
+
+      document.getElementById("output").textContent = out;
+    }
+
+    // Initialize
+    updateMode();
+  </script>
+</body>
+</html>

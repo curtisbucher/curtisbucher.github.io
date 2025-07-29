@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Horse Odds Input</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+      background: #f9f9f9;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1em;
+    }
+    th, td {
+      padding: 0.6em;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+    input {
+      width: 100%;
+      padding: 0.3em;
+    }
+    button {
+      padding: 0.5em 1em;
+      margin-top: 1em;
+    }
+    #probSum {
+      margin-top: 1em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Enter Odds or Probabilities</h2>
+
+<table id="horseTable">
+  <thead>
+    <tr>
+      <th>Horse Name</th>
+      <th>Traditional Odds (e.g. 5:2)</th>
+      <th>Probability</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody id="horseRows">
+    <!-- Dynamic rows go here -->
+  </tbody>
+</table>
+
+<button onclick="addRow()">+ Add Horse</button>
+<p id="probSum">Total Probability: 0.000</p>
+
+<script>
+let horseCount = 0;
+
+function addRow(name = '', odds = '', prob = '') {
+  const tbody = document.getElementById('horseRows');
+  const row = document.createElement('tr');
+  row.dataset.index = horseCount;
+
+  row.innerHTML = `
+    <td><input type="text" placeholder="Horse ${horseCount + 1}" value="${name}" class="name"></td>
+    <td><input type="text" placeholder="e.g. 5:2" value="${odds}" class="odds"></td>
+    <td><input type="number" step="0.0001" placeholder="e.g. 0.25" value="${prob}" class="prob"></td>
+    <td><button onclick="removeRow(this)">✕</button></td>
+  `;
+
+  tbody.appendChild(row);
+  hookRowEvents(row);
+  horseCount++;
+  updateTotalProb();
+}
+
+function removeRow(btn) {
+  btn.closest('tr').remove();
+  updateTotalProb();
+}
+
+function hookRowEvents(row) {
+  const oddsInput = row.querySelector('.odds');
+  const probInput = row.querySelector('.prob');
+
+  oddsInput.addEventListener('input', () => {
+    const odds = oddsInput.value.trim();
+    const parsed = parseOdds(odds);
+    if (parsed !== null) {
+      probInput.value = parsed.toFixed(4);
+    }
+    updateTotalProb();
+  });
+
+  probInput.addEventListener('input', () => {
+    const p = parseFloat(probInput.value);
+    if (!isNaN(p) && p > 0 && p < 1) {
+      const classicOdds = toOddsString(p);
+      oddsInput.value = classicOdds;
+    }
+    updateTotalProb();
+  });
+}
+
+function parseOdds(oddsStr) {
+  const match = oddsStr.match(/^(\d+)\s*:\s*(\d+)$/);
+  if (!match) return null;
+  const num = parseFloat(match[1]);
+  const den = parseFloat(match[2]);
+  if (den === 0) return null;
+  return den / (num + den);
+}
+
+function toOddsString(p) {
+  const decimal = (1 - p) / p;
+  const rounded = Math.round(decimal * 100) / 100;
+  return `${rounded}:1`;
+}
+
+function updateTotalProb() {
+  const probs = document.querySelectorAll('.prob');
+  let total = 0;
+  probs.forEach(p => {
+    const val = parseFloat(p.value);
+    if (!isNaN(val)) total += val;
+  });
+  document.getElementById('probSum').textContent = `Total Probability: ${total.toFixed(3)}`;
+}
+
+// Add a few rows to start
+addRow();
+addRow();
+addRow();
+</script>
+
+</body>
+</html>
